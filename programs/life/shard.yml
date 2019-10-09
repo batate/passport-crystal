@@ -1,0 +1,13 @@
+name: life
+version: 0.1.0
+
+authors:
+  - Bruce Tate <bruce@rapidred.com>
+
+targets:
+  life:
+    main: src/life.cr
+
+crystal: 0.29.0
+
+license: MIT

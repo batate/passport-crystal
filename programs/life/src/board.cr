@@ -1,23 +1,3 @@
-# Life
-
-An implementation of Conway's Game of Life. We build a point that's a pass-by-value struct, and a board with a grid that's a map. Keys are points; values are the symobols `:live` or `:dead`.  
-
-Rules to compute the next generation: 
-
-- An empty cell with three neighbors will come to life
-- A live cell with fewer than two neighbors will die
-- A live cell with more than three neighbors will die
-- Other cells will stay the same. 
-
-
-```playground
-struct Point
-  property x, y
-  
-  def initialize( @x : Int32, @y : Int32)
-  end
-end
-
 class Board
   property(
     height : Int32, 
@@ -123,23 +103,3 @@ class Board
     end
   end
 end
-
-class Grids
-  def self.repeater
-    <<-STRING
-    
-    xxx
-    
-    STRING
-	end
-
-  def self.stable
-    <<-STRING
-    xx
-    xx
-    STRING
-	end
-end
-
-Board.new(Grids.repeater).next_generation.print
-```
