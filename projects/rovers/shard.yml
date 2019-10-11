@@ -1,0 +1,19 @@
+name: rovers
+version: 0.1.0
+
+authors:
+  - Bruce Tate <bruce@rapidred.com>
+
+targets:
+  rovers:
+    main: src/rovers.cr
+
+crystal: 0.31.1
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  rover:
+    github: batate/rover
